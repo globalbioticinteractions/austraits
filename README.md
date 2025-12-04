@@ -32,7 +32,7 @@ All files originate in austraits-7.0.0/ are from AusTrait. The following files a
 ├── interaction_types_mapping.csv (added to facilitate GloBI indexing/review)
 ├── globi.json (added to facilitate GloBI indexing/review)
 ├── README.md (added to facilitate GloBI indexing/review)
-└── traits.csv.gz -> austraits-7.0.0/traits.csv.gz (gzipped to reduce file size)
+└── austraits-7.0.0/traits.csv.gz (gzipped to reduce file size)
 ```
 
 ## Provenance 

@@ -8,7 +8,7 @@
       "@language" : "en"
     } ],
     "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
-    "url" : "traits.csv.gz",
+    "url" : "austraits-7.0.0/traits.csv.gz",
     "dcterms:bibliographicCitation" : "Falster, Gallagher et al (2021) AusTraits, a curated plant trait database for the Australian flora. Scientific Data 8: 254, https://doi.org/10.1038/s41597-021-01006-6",
     "delimiter" : ",",
     "headerRowCount" : 1,
