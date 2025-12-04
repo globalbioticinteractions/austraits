@@ -1,0 +1,1779 @@
+title: 'AusTraits: a curated plant trait database for the Australian flora'
+description: AusTraits is a transformative database, containing measurements on the
+  traits of Australia's plant taxa, standardised from hundreds of disconnected primary
+  sources. While this repository contains the harmonised data, the raw data and code
+  used to build the resource are also available on the project's GitHub repository,http://traitecoevo.github.io/austraits.build.
+  Further information on the project is available in the associated publication and
+  at the project website https://austraits.org.
+version: 7.0.0
+doi: 10.5281/zenodo.3568417
+geo_location:
+  geo_location_place: Australia
+  geodetic_datum: EPSG:4326
+language: en
+related_identifiers:
+- related_identifier_type: url
+  identifier: https://github.com/traitecoevo/austraits.build/
+  relation_type: Compiles
+  resource_type: dataset
+- related_identifier_type: doi
+  identifier: 10.1038/s41597-021-01006-6
+  relation_type: isCitedBy
+  resource_type: publication-article
+- related_identifier_type: doi
+  identifier: 10.5281/zenodo.3568417
+  relation_type: isVersionOf
+  resource_type: dataset
+- related_identifier_type: url
+  identifier: https://github.com/traitecoevo/traits.build/releases/tag/v2.1.0
+  relation_type: isCompiledBy
+  resource_type: Software
+- related_identifier_type: url
+  identifier: https://github.com/traitecoevo/APCalign/releases/tag/2025-04-15
+  relation_type: Sources
+  resource_type: Software
+- related_identifier_type: url
+  identifier: https://github.com/traitecoevo/APD/releases/tag/v2.1.0
+  relation_type: Sources
+  resource_type: Software
+- related_identifier_type: url
+  identifier: https://github.com/traitecoevo/traits.build
+  relation_type: isCompiledBy
+  resource_type: software
+  version: 2.1.0
+references: 'Falster, Gallagher et al (2021) *AusTraits, a curated plant trait database
+  for the Australian flora*. Scientific Data 8: 254, https://doi.org/10.1038/s41597-021-01006-6'
+publisher: Zenodo
+publication_year: 2025
+publication_date: 20 Jun 2025
+license:
+  rights: CC-BY-4.0
+  rights_holder: Falster, Daniel
+  rights_URI: https://creativecommons.org/licenses/by/4.0/
+  description: Under this license, the material can be copied and redistributed in
+    any medium or format. It can be remixed, transformed, and built upon for any purpose,
+    even commercially. Re-users must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. Re-users may not apply legal terms
+    or technological measures that legally restrict others from doing anything the
+    license permits.
+subject:
+  subject_scheme: ANZSRC Field of Research
+  scheme_URI: https://linked.data.gov.au/def/anzsrc-for/2020/
+  value_URI:
+  - https://linked.data.gov.au/def/anzsrc-for/2020/3103
+  - https://linked.data.gov.au/def/anzsrc-for/2020/3104
+  - https://linked.data.gov.au/def/anzsrc-for/2020/4104
+  - https://linked.data.gov.au/def/anzsrc-for/2020/300703
+  - https://linked.data.gov.au/def/anzsrc-for/2020/060705
+  - https://linked.data.gov.au/def/anzsrc-for/2020/050202
+  - https://linked.data.gov.au/def/anzsrc-for/2020/060208
+  - https://linked.data.gov.au/def/anzsrc-for/2020/069902
+funding_reference:
+- funder_name: Australian Research Data Commons (ARDC)
+  award_IRI: doi.org/10.47486/DP720
+  award_number: DP720
+  award_title: AusTraits, A national database on the traits of Australia's complete
+    flora.
+- funder_name: Australian Research Data Commons (ARDC)
+  award_IRI: doi.org/10.47486/TD044
+  award_number: TD044
+  award_title: AusTraits, A national database on the traits of Australia's complete
+    flora.
+- funder_name: Australian Research Council
+  award_IRI: purl.org/au-research/grants/arc/DE170100208
+  award_number: DE170100208
+  award_title: Discovery Early Career Researcher Award
+- funder_name: Australian Research Council
+  award_IRI: purl.org/au-research/grants/arc/FT160100113
+  award_number: FT160100113
+  award_title: Future Fellowship
+- funder_name: Australian Research Council
+  award_IRI: purl.org/au-research/grants/arc/FT100100910
+  award_number: FT100100910
+  award_title: Future Fellowship
+creators:
+- last_name: Falster
+  given_name: Daniel
+  ORCID: 0000-0002-9814-092X
+  affiliation: Evolution & Ecology Research Centre, UNSW Sydney, Australia
+- last_name: Gallagher
+  given_name: Rachael
+  ORCID: 0000-0002-4680-8115
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Elizabeth
+  given_name: Wenk
+  ORCID: 0000-0001-5640-5910
+  affiliation: Evolution & Ecology Research Centre, UNSW Sydney, Australia
+contributors:
+- last_name: Adams
+  given_name: Mark
+  ORCID: 0000-0002-8154-0097
+  affiliation: Swinburne University of Technology, Australia
+- last_name: Ahrens
+  given_name: Collin W.
+  ORCID: 0000-0002-0614-9928
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Alfonzetti
+  given_name: Matthew
+  ORCID: 0000-0002-0064-6368
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Andrew
+  given_name: Samuel
+  ORCID: 0000-0003-4589-2746
+  affiliation: CSIRO Land and Water, Australia
+- last_name: Angevin
+  given_name: Tara
+  ORCID: .na.character
+  affiliation: La Trobe University, Australia
+- last_name: Apgaua
+  given_name: Deborah
+  ORCID: 0000-0002-6303-6989
+  affiliation: Centre for Rainforest Studies, School for Field Studies, Yungaburra,
+    Queensland 4872, Australia
+- last_name: Arndt
+  given_name: Stefan
+  ORCID: 0000-0001-7086-9375
+  affiliation: University of Melbourne, Australia
+- last_name: Arnold
+  given_name: Pieter
+  ORCID: 0000-0002-6158-7752
+  affiliation: The Australian National University, Australia
+- last_name: Ash
+  given_name: Julian
+  ORCID: .na.character
+  affiliation: The Australian National University, Australia
+- last_name: Atkin
+  given_name: Owen
+  ORCID: 0000-0003-1041-5202
+  affiliation: The Australian National University, Australia
+- last_name: Atkinson
+  given_name: Joe
+  ORCID: 0000-0001-9232-4421
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Atwell
+  given_name: Brian
+  ORCID: 0000-0002-0466-1688
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Auld
+  given_name: Tony
+  ORCID: 0000-0002-8766-2829
+  affiliation: NSW Department of Planning Industry and Environment, Australia
+- last_name: Baker
+  given_name: Andrew
+  ORCID: 0000-0002-0658-3767
+  affiliation: Southern Cross University, Australia
+- last_name: Ball
+  given_name: Marilyn
+  ORCID: 0000-0001-9170-940X
+  affiliation: The Australian National University, Australia
+- last_name: Balthazar
+  given_name: Maria von
+  ORCID: 0000-0001-7436-3582
+  affiliation: Department of Botany and Biodiversity Research, University of Vienna,
+    Austria
+- last_name: Barrett
+  given_name: Russell
+  ORCID: 0000-0003-0360-8321
+  affiliation: National Herbarium of New South Wales, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: Barrett
+  given_name: Sarah
+  ORCID: 0000-0003-2790-992X
+  affiliation: Western Australia Department of Biodiversity, Conservation and Attractions
+- last_name: Bean
+  given_name: Anthony
+  ORCID: 0000-0001-5697-1664
+  affiliation: Queensland Herbarium, Australia
+- last_name: Bebawi
+  given_name: Faiz
+  ORCID: 0000-0002-3935-3888
+  affiliation: Tropical Weeds Research Centre, Queensland
+- last_name: Benwell
+  given_name: Andrew
+  ORCID: 0009-0001-6386-1110
+  affiliation: Ecos Environmental Pty Ltd, 3 Short Street, New Brighton, NSW 2483,
+    Australia
+- last_name: Blackman
+  given_name: Chris
+  ORCID: 0000-0002-7057-956X
+  affiliation: University of Tasmania, Australia
+- last_name: Bloomfield
+  given_name: Keith
+  ORCID: 0000-0002-6492-4507
+  affiliation: Imperial College, London, United Kingdom
+- last_name: Boer
+  given_name: Matthias M.
+  ORCID: 0000-0001-6362-4572
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Bourne
+  given_name: Aimee E.
+  ORCID: .na.character
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Bowman
+  given_name: David
+  ORCID: 0000-0001-8075-124X
+  affiliation: University of Tasmania, Australia
+- last_name: Bradshaw
+  given_name: Holly
+  ORCID: .na.character
+  affiliation: University of South Australia, Australia
+- last_name: Bradstock
+  given_name: Ross
+  ORCID: 0000-0002-6904-2394
+  affiliation: University of Wollongong
+- last_name: Bragg
+  given_name: Jason
+  ORCID: 0000-0002-7621-7295
+  affiliation: Research Centre for Ecosystem Resilience, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: Brand
+  given_name: Willi A.
+  ORCID: .na.character
+  affiliation: Max-Planck Institute for Biogeochemistry, Germany
+- last_name: Briggs
+  given_name: Amber
+  ORCID: 0000-0001-5933-1064
+  affiliation: unknown
+- last_name: Britton
+  given_name: Delny L.
+  ORCID: .na.character
+  affiliation: University of New England, Australia
+- last_name: Brock
+  given_name: John
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Brodribb
+  given_name: Timothy
+  ORCID: 0000-0002-4964-6107
+  affiliation: University of Tasmania, Australia
+- last_name: Brodribb
+  given_name: Timothy
+  ORCID: 0000-0002-4964-6107
+  affiliation: Department of Plant Science, University of Tasmania
+- last_name: Brown
+  given_name: Alison
+  ORCID: unknown
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Bryant
+  given_name: Callum
+  ORCID: 0000-0002-8035-9157
+  affiliation: The Australian National University, Australia
+- last_name: Buckton
+  given_name: Genevieve
+  ORCID: .na.character
+  affiliation: James Cook University, Australia
+- last_name: Burrows
+  given_name: Geoff
+  ORCID: .na.character
+  affiliation: Charles Sturt University, Australia
+- last_name: Burrows
+  given_name: Neil
+  ORCID: 0000-0001-8689-564X
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: Butler
+  given_name: Don
+  ORCID: .na.character
+  affiliation: Queensland Herbarium, Mt Coot-tha Botanic Gardens
+- last_name: Butler
+  given_name: Don
+  ORCID: .na.character
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Caldwell
+  given_name: Elizabeth
+  ORCID: .na.character
+  affiliation: School of Biological Sciences, Monash University, Australia
+- last_name: Camac
+  given_name: James
+  ORCID: 0000-0003-4785-0742
+  affiliation: Centre of Excellence for Biosecurity Risk Analysis, The University
+    of Melbourne, Australia
+- last_name: Campbell
+  given_name: Monica
+  ORCID: unknown
+  affiliation: unknown
+- last_name: Canham
+  given_name: Caroline
+  ORCID: 0000-0003-4196-9240
+  affiliation: University of Western Australia
+- last_name: Carey
+  given_name: Amanda
+  ORCID: unknown
+  affiliation: Environment ACT
+- last_name: Carpenter
+  given_name: Raymond
+  ORCID: 0000-0001-7129-2870
+  affiliation: University of Adelaide, Australia
+- last_name: Catford
+  given_name: Jane A.
+  ORCID: 0000-0003-0582-5960
+  affiliation: King's College London, London, United Kingdom
+- last_name: Cathcart-Van Weeren
+  given_name: Ella
+  ORCID: 0009-0004-2209-114X
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Catherine
+  given_name: Lestrange
+  ORCID: .na.character
+  affiliation: University of Technology, Sydney
+- last_name: Cawthray
+  given_name: Gregory
+  ORCID: 0000-0003-1150-6675
+  affiliation: University of Western Australia, Australia
+- last_name: Cernusak
+  given_name: Lucas
+  ORCID: 0000-0002-7575-5526
+  affiliation: College of Science and Engineering, James Cook University, Cairns,
+    QLD, Australia
+- last_name: Chandler
+  given_name: Gregory
+  ORCID: 0000-0002-0905-6823
+  affiliation: Department of Agriculture, Australia
+- last_name: Chapman
+  given_name: Alex
+  ORCID: .na.character
+  affiliation: Western Australian Herbarium, Keiran McNamara Conservation Science
+    Centre, Department of Biodiversity, Conservation and Attractions, Western Australia,
+    Australia
+- last_name: Cheal
+  given_name: David
+  ORCID: 0000-0001-8065-0254
+  affiliation: Centre for Environmental Management, School of Health & Life Sciences,
+    Federation University, Australia
+- last_name: Cheesman
+  given_name: Alexander W.
+  ORCID: 0000-0003-3931-5766
+  affiliation: James Cook University, Australia
+- last_name: Cheesman
+  given_name: Alexander W.
+  ORCID: 0000-0003-3931-5766
+  affiliation: College of Science and Engineering, James Cook University, Cairns,
+    QLD, Australia
+- last_name: Chen
+  given_name: Si-Chong
+  ORCID: 0000-0002-6855-2595
+  affiliation: Royal Botanic Gardens, Kew, United Kingdom
+- last_name: Chinnock
+  given_name: Robert
+  ORCID: .na.character
+  affiliation: State Herbarium of South Australia, Botanic Gardens and State Herbarium,
+    Hackney Road, Adelaide, SA 5000, Australia
+- last_name: Choat
+  given_name: Brendan
+  ORCID: 0000-0002-9105-640X
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Clarke
+  given_name: Peter
+  ORCID: .na.character
+  affiliation: University of New England, Australia
+- last_name: Clarke
+  given_name: Peter J.
+  ORCID: .na.character
+  affiliation: University of New England, Australia
+- last_name: Clayton
+  given_name: Derek
+  ORCID: .na.character
+  affiliation: Royal Botanic Gardens, Kew, United Kingdom
+- last_name: Clifford
+  given_name: Harold Trevor
+  ORCID: .na.character
+  affiliation: The University of Queensland, Australia
+- last_name: Clinton
+  given_name: Brook
+  ORCID: .na.character
+  affiliation: Centre for Australian National Biodiversity Research (a joint venture
+    between Parks Australia and CSIRO), Canberra, ACT, Australia
+- last_name: Clode
+  given_name: Peta
+  ORCID: 0000-0002-5188-4737
+  affiliation: University of Western Australia, Australia
+- last_name: Cochrane
+  given_name: Anne
+  ORCID: 0000-0001-5002-368X
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: Coleman
+  given_name: David
+  ORCID: 0000-0002-1773-6597
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Coleman
+  given_name: Helen
+  ORCID: .na.character
+  affiliation: Western Australian Herbarium, Keiran McNamara Conservation Science
+    Centre, Department of Biodiversity, Conservation and Attractions, Western Australia,
+    Australia
+- last_name: Collette
+  given_name: Justin
+  ORCID: 0000-0002-4618-2677
+  affiliation: Australian PlantBank, Australian Institute of Botanical Science, Australian
+    Botanic Garden, Mount Annan, NSW, Australia
+- last_name: Cooke
+  given_name: Julia
+  ORCID: 0000-0002-3178-0674
+  affiliation: The Open University, Milton Keynes, United Kingdom
+- last_name: Cooper
+  given_name: Wendy
+  ORCID: .na.character
+  affiliation: consultant
+- last_name: Cooper
+  given_name: William
+  ORCID: .na.character
+  affiliation: consultant
+- last_name: Cornwell
+  given_name: William
+  ORCID: 0000-0003-4080-4073
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Cosgrove
+  given_name: Meredith
+  ORCID: .na.character
+  affiliation: The Australian National University, Australia
+- last_name: Cowie
+  given_name: Ian
+  ORCID: 0000-0001-5295-9596
+  affiliation: Northern Territory Herbarium, Australia
+- last_name: Cowling
+  given_name: R. M.
+  ORCID: .na.character
+  affiliation: Western Australian Institute of Technology
+- last_name: Craven
+  given_name: Lyn
+  ORCID: .na.character
+  affiliation: Australian National Herbarium, Australia
+- last_name: Creek
+  given_name: Danielle
+  ORCID: 0000-0002-8242-2359
+  affiliation: Hawkesbury Institute for the Environment, University of Western Sydney,
+    Penrith, New South Wales, Australia
+- last_name: Crisp
+  given_name: Michael
+  ORCID: 0000-0002-8255-6349
+  affiliation: The Australian National University, Australia
+- last_name: Cross
+  given_name: Erika
+  ORCID: .na.character
+  affiliation: Charles Sturt University, Australia
+- last_name: Crous
+  given_name: Kristine
+  ORCID: 0000-0001-9478-7593
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Crowley
+  given_name: G.
+  ORCID: .na.character
+  affiliation: .na.character
+- last_name: Cunningham
+  given_name: Saul
+  ORCID: 0000-0003-0703-6893
+  affiliation: Fenner School of Environment and Society, The Australian National University,
+    Australia
+- last_name: Curran
+  given_name: Timothy
+  ORCID: 0000-0001-8817-4360
+  affiliation: Lincoln University, New Zealand
+- last_name: Curtis
+  given_name: Ellen
+  ORCID: .na.character
+  affiliation: University of Technology Sydney, Australia
+- last_name: Davidson
+  given_name: Ian
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Daws
+  given_name: Matthew
+  ORCID: 0000-0002-9120-4724
+  affiliation: Environment Department, Alcoa of Australia, Huntly, Western Australia
+- last_name: DeGabriel
+  given_name: Jane L.
+  ORCID: 0000-0003-1245-5291
+  affiliation: School of Marine and Tropical Biology, James Cook University, Australia
+- last_name: Denton
+  given_name: Matthew
+  ORCID: 0000-0002-2804-0384
+  affiliation: School of Agriculture, Food and Wine, University of Adelaide, Australia
+- last_name: Doherty
+  given_name: Michael
+  ORCID: unknown
+  affiliation: Eucryphia Botanical Consulting, Hackett, ACT
+- last_name: Dong
+  given_name: Ning
+  ORCID: 0000-0003-0793-8854
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Drake
+  given_name: Paul
+  ORCID: 0000-0002-1329-180X
+  affiliation: University of Western Australia
+- last_name: Draper
+  given_name: Jenna
+  ORCID: 0000-0002-6262-2820
+  affiliation: School of Biological Sciences, The University of Adelaide, Adelaide,
+    SA 5005, Australia
+- last_name: Du
+  given_name: Pengzhen
+  ORCID: 0000-0002-5774-5711
+  affiliation: Lanzhou University, China
+- last_name: Duan
+  given_name: Honglang
+  ORCID: 0000-0003-3761-6936
+  affiliation: Institute for Forest Resources & Environment of Guizhou. Guizhou University,
+    Guiyang, China
+- last_name: Duff
+  given_name: Gordon
+  ORCID: .na.character
+  affiliation: Cooperative Research Centre for Tropical Savannas, Northern Territory
+    University, Australia
+- last_name: Dun
+  given_name: Lily
+  ORCID: 0000-0002-0712-5143
+  affiliation: University of New South Wales
+- last_name: Duncan
+  given_name: David
+  ORCID: 0000-0003-4411-8214
+  affiliation: University of Melbourne, Australia
+- last_name: Duncan
+  given_name: Richard P.
+  ORCID: 0000-0003-2295-449X
+  affiliation: Institute for Applied Ecology, University of Canberra, ACT 2617, Australia
+- last_name: Duretto
+  given_name: Marco
+  ORCID: 0000-0003-1013-4291
+  affiliation: National Herbarium of New South Wales, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: Dwyer
+  given_name: John M.
+  ORCID: 0000-0001-7389-5528
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Eamus
+  given_name: Derek
+  ORCID: 0000-0003-2765-8040
+  affiliation: University of Technology Sydney, Australia
+- last_name: Edwards
+  given_name: Cheryl
+  ORCID: 0000-0003-3275-1020
+  affiliation: Melbourne Water, Australia
+- last_name: Ellsworth
+  given_name: David S.
+  ORCID: 0000-0002-9699-2272
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Enright
+  given_name: Neal
+  ORCID: 0000-0003-2979-4505
+  affiliation: School of Environmental and Conservation Sciences, Murdoch University,
+    Murdoch, Western Australia, Australia
+- last_name: Esperon-Rodriguez
+  given_name: Manuel
+  ORCID: 0000-0003-3649-2134
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Evans
+  given_name: John
+  ORCID: 0000-0003-1379-3532
+  affiliation: The Australian National University, Australia
+- last_name: Everingham
+  given_name: Susan
+  ORCID: 0000-0002-4780-2700
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Falster
+  given_name: Daniel
+  ORCID: 0000-0002-9814-092X
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Fan
+  given_name: Baoli
+  ORCID: 0000-0003-0918-4152
+  affiliation: College of Life Science, Northwest Normal University, Lanzhou, China
+- last_name: Farrell
+  given_name: Claire
+  ORCID: 0000-0002-5822-7529
+  affiliation: University of Melbourne, Australia
+- last_name: Finnegan
+  given_name: Patrick
+  ORCID: 0000-0001-5021-1138
+  affiliation: University of Western Australia, Australia
+- last_name: Firn
+  given_name: Jennifer
+  ORCID: 0000-0001-6026-8912
+  affiliation: Queensland University of Technology, Brisbane, Australia
+- last_name: Fonseca
+  given_name: Carlos
+  ORCID: 0000-0003-0292-0399
+  affiliation: Departamento de Ecologia, Universidade Federal do Rio Grande do Norte,
+    Natal, Brazil
+- last_name: Forster
+  given_name: Paul Irwin
+  ORCID: .na.character
+  affiliation: Queensland Herbarium, Australia
+- last_name: French
+  given_name: Ben
+  ORCID: 0000-0001-5046-4047
+  affiliation: University of Tasmania, Australia
+- last_name: Frith
+  given_name: Allison
+  ORCID: .na.character
+  affiliation: The University of Sydney, Australia
+- last_name: Frood
+  given_name: Doug
+  ORCID: .na.character
+  affiliation: Pathways Bushland and Environment Consultancy, Australia
+- last_name: Fryer
+  given_name: Roger
+  ORCID: .na.character
+  affiliation: Western Australian Seed Centre, Botanic Garden and Parks Authority,
+    Western Australia
+- last_name: Fuchs
+  given_name: Anne
+  ORCID: 0000-0001-5737-8803
+  affiliation: Centre for Australian National Biodiversity Research (a joint venture
+    between Parks Australia and CSIRO), Canberra, ACT, Australia
+- last_name: Funk
+  given_name: Jennifer
+  ORCID: 0000-0002-1916-5513
+  affiliation: Department of Plant Sciences, University of California, Davis, USA
+- last_name: Gallagher
+  given_name: Rachael
+  ORCID: 0000-0002-4680-8115
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Gardiner
+  given_name: Ronald
+  ORCID: .na.character
+  affiliation: The University of Queensland, Australia
+- last_name: Geange
+  given_name: Sonya
+  ORCID: 0000-0001-5344-7234
+  affiliation: The Australian National University, Australia
+- last_name: Ghannoum
+  given_name: Oula
+  ORCID: 0000-0002-1341-0741
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Gill
+  given_name: Malcolm
+  ORCID: .na.character
+  affiliation: The Australian National University, Australia
+- last_name: Gleason
+  given_name: Sean
+  ORCID: 0000-0002-5607-4741
+  affiliation: USDA-ARS, WMSRU, Fort Collins, Colorado 80526, USA
+- last_name: Goble-Garratt
+  given_name: Ethel
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Gosper
+  given_name: Carl
+  ORCID: 0000-0002-0962-5117
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: Gray
+  given_name: Emma
+  ORCID: 0000-0002-5352-0398
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Grigg
+  given_name: Alasdair
+  ORCID: unknown
+  affiliation: Plant Biology, Faculty of Natural and Agricultural Sciences, The University
+    of Western Australia
+- last_name: Groom
+  given_name: Philip K
+  ORCID: .na.character
+  affiliation: Curtin University, Australia
+- last_name: Grootemaat
+  given_name: Saskia
+  ORCID: 0000-0002-5033-5912
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Gross
+  given_name: Caroline
+  ORCID: 0000-0001-8014-1548
+  affiliation: University of New England, Australia
+- last_name: Groves
+  given_name: Richard
+  ORCID: unknown
+  affiliation: Division of Plant Industry, CSIRO
+- last_name: Grubb
+  given_name: Peter
+  ORCID: .na.character
+  affiliation: Cambridge University, United Kingdom
+- last_name: Guerin
+  given_name: Greg
+  ORCID: 0000-0002-2104-6695
+  affiliation: School of Biological Sciences, The University of Adelaide, Australia
+- last_name: Guerin
+  given_name: Greg
+  ORCID: 0000-0002-2104-6695
+  affiliation: Terrestrial Ecosystem Research Network, The School of Biological Sciences,
+    The University of Adelaide, Adelaide, SA, 5005, Australia
+- last_name: Guilherme Pereira
+  given_name: Caio
+  ORCID: 0000-0003-3288-8553
+  affiliation: Department of Civil and Environmental Engineering, Massachusetts Institute
+    of Technology, USA
+- last_name: Guja
+  given_name: Lydia
+  ORCID: 0000-0001-5945-438X
+  affiliation: Centre for Australian National Biodiversity Research (a joint venture
+    between Parks Australia and CSIRO), Canberra, ACT, Australia
+- last_name: Hahs
+  given_name: Amy
+  ORCID: 0000-0003-0163-6732
+  affiliation: School of Ecosystem and Forest Sciences, The University of Melbourne,
+    Australia
+- last_name: Hall
+  given_name: TJ
+  ORCID: .na.character
+  affiliation: CSIRO, Australia
+- last_name: Hanley
+  given_name: Mick
+  ORCID: 0000-0002-3966-8919
+  affiliation: Curtin University, Australia
+- last_name: Harrison
+  given_name: Matthew Tom
+  ORCID: 0000-0001-7425-452X
+  affiliation: Tasmanian Institute of Agriculture, University of Tasmania, Australia
+- last_name: Harvey
+  given_name: Judith
+  ORCID: .na.character
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: Hassiotou
+  given_name: Foteini
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Hayes
+  given_name: Patrick
+  ORCID: 0000-0001-7554-4588
+  affiliation: University of Western Australia, Australia
+- last_name: He
+  given_name: Tianhua
+  ORCID: 0000-0002-0924-3637
+  affiliation: Curtin University, Australia
+- last_name: Henery
+  given_name: Martin
+  ORCID: .na.character
+  affiliation: Parks Australia, Department of Agriculture, Water and the Environment,
+    Australia
+- last_name: Herbohn
+  given_name: John
+  ORCID: 0000-0001-5701-4882
+  affiliation: School of Agriculture and Food Science, The University of Queensland,
+    Australia
+- last_name: Hochuli
+  given_name: Dieter
+  ORCID: 0000-0002-6673-4475
+  affiliation: School of Life and Environmental Sciences, The University of Sydney,
+    Australia
+- last_name: Hocking
+  given_name: Peter
+  ORCID: .na.character
+  affiliation: Murdoch University, Australia
+- last_name: Howell
+  given_name: Jocelyn
+  ORCID: .na.character
+  affiliation: Berowa NSW, Australia
+- last_name: Huang
+  given_name: Guomin
+  ORCID: 0000-0002-7597-9386
+  affiliation: Nanchang Institute of Technology, Nanchang, China
+- last_name: Hughes
+  given_name: Kate
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Hughes
+  given_name: Lesley
+  ORCID: 0000-0003-0313-9780
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Huisman
+  given_name: John
+  ORCID: 0000-0002-5255-8423
+  affiliation: Western Australian Herbarium, Biodiversity and Conservation Science,
+    Department of Biodiversity, Conservation and Attractions, Western Australia, Australia
+- last_name: Hutton
+  given_name: B.J.
+  ORCID: unknown
+  affiliation: Kings Park and Botanic Garden, Perth, WA
+- last_name: Ilic
+  given_name: Jugoslav
+  ORCID: 0000-0001-5692-5596
+  affiliation: University of Melbourne, Australia
+- last_name: Islam
+  given_name: Muhammad
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Jagdish
+  given_name: Ashika
+  ORCID: .na.character
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Jin
+  given_name: Daniel
+  ORCID: 0000-0001-7492-9830
+  affiliation: School of Life and Environmental Sciences, The University of Sydney,
+    Australia
+- last_name: Jordan
+  given_name: Gregory
+  ORCID: 0000-0002-6033-2766
+  affiliation: University of Tasmania, Australia
+- last_name: Jurado
+  given_name: Enrique
+  ORCID: 0000-0002-4043-5549
+  affiliation: Universidad Autonoma de Nuevo Leon, Mexico
+- last_name: Kanowski
+  given_name: John
+  ORCID: .na.character
+  affiliation: Australian Wildlife Conservancy, Australia
+- last_name: Kasel
+  given_name: Sabine
+  ORCID: 0000-0001-8188-1089
+  affiliation: University of Melbourne, Australia
+- last_name: Keighery
+  given_name: Greg
+  ORCID: 0000-0001-5226-0363
+  affiliation: Department of Biodiversity, Conservation and Attractions, WA, Australia
+- last_name: Kellermann
+  given_name: Jürgen
+  ORCID: 0000-0001-9124-9802
+  affiliation: State Herbarium of South Australia, Botanic Gardens and State Herbarium,
+    Hackney Road, Adelaide, SA 5000, Australia
+- last_name: Kenny
+  given_name: Belinda
+  ORCID: .na.character
+  affiliation: NSW Rural Fire Service, Australia
+- last_name: Khot
+  given_name: Rohan
+  ORCID: .na.character
+  affiliation: University of Melbourne, Australia
+- last_name: Kirkpatrick
+  given_name: James
+  ORCID: 0000-0003-2763-2692
+  affiliation: University of Tasmania, Australia
+- last_name: Klazenga
+  given_name: Niels
+  ORCID: 0000-0003-2224-6821
+  affiliation: Royal Botanic Gardens Victoria
+- last_name: Knox
+  given_name: Kirsten
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Kocacinar
+  given_name: Ferit
+  ORCID: 0000-0003-0890-6117
+  affiliation: Kahramanmaras Sütcü Imam University, Turkey
+- last_name: Kohout
+  given_name: Michele
+  ORCID: 0000-0001-6739-505X
+  affiliation: Department of Environment, Land, Water and Planning, Victoria, Australia
+- last_name: Kooyman
+  given_name: Robert
+  ORCID: 0000-0003-1985-9547
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Kotowska
+  given_name: Martyna
+  ORCID: 0000-0002-2283-5979
+  affiliation: Department of Plant Ecology and Ecosystems Research, University of
+    Goettingen, Germany
+- last_name: Kubiak
+  given_name: P. J.
+  ORCID: .na.character
+  affiliation: .na.character
+- last_name: Kuo
+  given_name: John
+  ORCID: .na.character
+  affiliation: University of Western Australia, Australia
+- last_name: Lai
+  given_name: Hao Ran
+  ORCID: 0000-0001-6871-0146
+  affiliation: University of Canterbury, New Zealand
+- last_name: Laliberté
+  given_name: Etienne
+  ORCID: 0000-0002-3167-2622
+  affiliation: Institut de recherche en biologie végétale, Université de Montréal,
+    4101 Sherbrooke Est, Montréal, Canada H1X 2B2
+- last_name: Lambers
+  given_name: Hans
+  ORCID: 0000-0002-4118-2272
+  affiliation: University of Western Australia, Australia
+- last_name: Lamont
+  given_name: Byron
+  ORCID: 0000-0001-9279-7149
+  affiliation: Curtin University, Australia
+- last_name: Lanfear
+  given_name: Robert
+  ORCID: 0000-0002-1140-2596
+  affiliation: Ecology and Evolution, Research School of Biology, Australian National
+    University, Canberra, Australia
+- last_name: Laughlin
+  given_name: Daniel C.
+  ORCID: 0000-0002-9651-5732
+  affiliation: Department of Botany, University of Wyoming, Laramie, WY 82071, USA
+- last_name: Laugier-Kitchener
+  given_name: Bree-Anne
+  ORCID: 0000-0002-5347-1055
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Laurance
+  given_name: Susan
+  ORCID: 0000-0002-2831-2933
+  affiliation: James Cook University, Australia
+- last_name: Lawes
+  given_name: Michael
+  ORCID: 0000-0002-2381-6147
+  affiliation: unknown
+- last_name: Lawson
+  given_name: James
+  ORCID: 0000-0001-7983-4443
+  affiliation: NSW Department of Primary Industries, Australia
+- last_name: Laxton
+  given_name: Emma
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Lehmann
+  given_name: Caroline
+  ORCID: 0000-0002-6825-124X
+  affiliation: Royal Botanic Garden Edinburgh, Edinburgh, United Kingdom
+- last_name: Lei
+  given_name: Zhangying
+  ORCID: 0009-0003-3583-5382
+  affiliation: Key Laboratory of Oasis Eco-agriculture, Xinjiang Production and Construction
+    Corps, Shihezi University, Shihezi, China
+- last_name: Leigh
+  given_name: Andrea
+  ORCID: 0000-0003-3568-2606
+  affiliation: University of Technology Sydney, Australia
+- last_name: Leishman
+  given_name: Michelle
+  ORCID: 0000-0003-4830-5797
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Leitch
+  given_name: Emrys
+  ORCID: 0000-0003-3857-5697
+  affiliation: School of Biological Sciences, The University of Adelaide, Australia
+- last_name: Lenz
+  given_name: Tanja
+  ORCID: .na.character
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Lepschi
+  given_name: Brendan
+  ORCID: 0000-0002-3281-2973
+  affiliation: Centre for Australian National Biodiversity Research (a joint venture
+    between Parks Australia and CSIRO), Canberra, ACT, Australia
+- last_name: Lewis
+  given_name: James
+  ORCID: 0000-0002-7347-9513
+  affiliation: Fordham University, New York City, NY, USA
+- last_name: Li
+  given_name: Ximeng
+  ORCID: 0000-0002-7816-5441
+  affiliation: College of Life and Environmental Science, Minzu University of China,
+    Beijing, China
+- last_name: Lily
+  given_name: Dun
+  ORCID: 0000-0002-0712-5143
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Lim
+  given_name: Felix
+  ORCID: 0000-0003-1227-460X
+  affiliation: University of Melbourne, Australia
+- last_name: Lindsay
+  given_name: Liz
+  ORCID: .na.character
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Liu
+  given_name: Shu Tong
+  ORCID: 0000-0002-5346-1711
+  affiliation: University of Western Australia, Australia
+- last_name: Liu
+  given_name: Udayangani
+  ORCID: 0000-0002-6192-1319
+  affiliation: Royal Botanic Gardens, Kew, United Kingdom
+- last_name: Lord
+  given_name: Janice
+  ORCID: 0000-0001-8314-0428
+  affiliation: University of Otago, Dunedin, New Zealand
+- last_name: Lunt
+  given_name: Ian
+  ORCID: 0000-0002-2059-899X
+  affiliation: Charles Sturt University, Australia
+- last_name: Lusk
+  given_name: Christopher
+  ORCID: 0000-0002-9037-7957
+  affiliation: Environmental Research Institute, University of Waikato, New Zealand
+- last_name: López Martinez
+  given_name: Andrea
+  ORCID: 0000-0002-2027-9753
+  affiliation: Universidad Nacional Autónoma de México, Mexico
+- last_name: Macinnis-Ng
+  given_name: Cate
+  ORCID: 0000-0003-3935-9814
+  affiliation: University of Auckland, New Zealand
+- last_name: Magallón
+  given_name: Susana
+  ORCID: 0000-0002-6838-7497
+  affiliation: Universidad Nacional Autónoma de México, Mexico
+- last_name: Manea
+  given_name: Anthony
+  ORCID: 0000-0002-0956-4529
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Martín-Forés
+  given_name: Irene
+  ORCID: 0000-0003-3627-0347
+  affiliation: School of Biological Sciences, The University of Adelaide, Australia
+- last_name: Maslin
+  given_name: Bruce
+  ORCID: 0000-0002-3039-0973
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Mason
+  given_name: Riah
+  ORCID: .na.character
+  affiliation: The University of Queensland, Australia
+- last_name: Mayfield
+  given_name: Margaret
+  ORCID: 0000-0002-5101-6542
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Mazanec
+  given_name: Richard
+  ORCID: 0000-0002-4332-887X
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: McCarthy
+  given_name: James
+  ORCID: 0000-0003-3060-1678
+  affiliation: Manaaki Whenua - Landcare Research, Lincoln 7640, New Zealand
+- last_name: McPherson
+  given_name: Hannah
+  ORCID: 0000-0003-0254-4573
+  affiliation: National Herbarium of New South Wales, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: Meers
+  given_name: Trevor
+  ORCID: .na.character
+  affiliation: Cumberland Ecology, Australia
+- last_name: Merritt
+  given_name: David
+  ORCID: 0000-0002-3250-6861
+  affiliation: Curtin University, Australia
+- last_name: Mesaglio
+  given_name: Thomas
+  ORCID: 0000-0002-1096-6066
+  affiliation: University of New South Wales
+- last_name: Messina
+  given_name: Andre
+  ORCID: .na.character
+  affiliation: Royal Botanic Gardens Victoria
+- last_name: Metcalfe
+  given_name: Daniel
+  ORCID: 0000-0001-6853-7072
+  affiliation: CSIRO Land and Water, Australia
+- last_name: Milberg
+  given_name: Per
+  ORCID: 0000-0001-6128-1051
+  affiliation: Linkoping University, Sweden
+- last_name: Mitchell
+  given_name: Patrick J.
+  ORCID: 0000-0002-5016-7031
+  affiliation: CSIRO Land and Water, Sandy Bay, Tasmania
+- last_name: Mokany
+  given_name: Karel
+  ORCID: 0000-0003-4199-3697
+  affiliation: CSIRO Land and Water, Australia
+- last_name: Moles
+  given_name: Angela
+  ORCID: 0000-0003-2041-7762
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Moore
+  given_name: Ben D.
+  ORCID: 0000-0002-6995-4721
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Moore
+  given_name: Nicholas
+  ORCID: 0000-0002-9087-7580
+  affiliation: La Trobe University, Australia
+- last_name: Morgan
+  given_name: Huw
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Morgan
+  given_name: John
+  ORCID: 0000-0003-2003-5983
+  affiliation: La Trobe University, Australia
+- last_name: Morgan
+  given_name: Rhys
+  ORCID: .na.character
+  affiliation: School of Biological Sciences, The University of Adelaide, Australia
+- last_name: Morris
+  given_name: William
+  ORCID: 0000-0002-8686-4154
+  affiliation: University of Melbourne, Australia
+- last_name: Mott
+  given_name: J.J.
+  ORCID: unknown
+  affiliation: Division of Tropical Crops and Pastures, CSIRO, Cunningham Laboratory,
+    Mill Road, St. Lucia, Qld
+- last_name: Muir
+  given_name: Annette
+  ORCID: 0000-0001-9383-6613
+  affiliation: Department of Environment, Land, Water and Planning, Victoria, Australia
+- last_name: Munroe
+  given_name: Samantha
+  ORCID: 0000-0001-7827-1028
+  affiliation: Terrestrial Ecosystem Research Network, The School of Biological Sciences,
+    The University of Adelaide, Adelaide, SA, 5005, Australia
+- last_name: Myers
+  given_name: Bronwyn
+  ORCID: 0000-0003-2309-0945
+  affiliation: Charles Darwin University
+- last_name: Myerscough
+  given_name: Peter
+  ORCID: .na.character
+  affiliation: School of Life and Environmental Sciences, The University of Sydney,
+    Australia
+- last_name: Nano
+  given_name: Catherine
+  ORCID: 0000-0002-1556-8307
+  affiliation: Flora and Fauna Division, Department of Environment, Parks and Water
+    Security, Northern Territory Government, Alice Springs, NT, Australia
+- last_name: Neal
+  given_name: Will
+  ORCID: .na.character
+  affiliation: University of Melbourne, Australia
+- last_name: Nelson
+  given_name: Des
+  ORCID: .na.character
+  affiliation: CSIRO, Australia
+- last_name: Nicholson
+  given_name: Áine
+  ORCID: .na.character
+  affiliation: University of Tasmania, Australia
+- last_name: Nicolle
+  given_name: Dean
+  ORCID: .na.character
+  affiliation: Currency Creek Arboretum, Australia
+- last_name: Nicotra
+  given_name: Adrienne
+  ORCID: 0000-0001-6578-369X
+  affiliation: The Australian National University, Australia
+- last_name: Niinemets
+  given_name: Ülo
+  ORCID: 0000-0002-3078-2192
+  affiliation: Estonian University of Life Sciences, Estonia
+- last_name: Nolan
+  given_name: Rachael
+  ORCID: 0000-0001-9277-5142
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: North
+  given_name: Tom
+  ORCID: .na.character
+  affiliation: Centre for Australian National Biodiversity Research (a joint venture
+    between Parks Australia and CSIRO), Canberra, ACT, Australia
+- last_name: O'Reilly-Nugent
+  given_name: Andrew
+  ORCID: 0000-0003-2071-6279
+  affiliation: Institute for Applied Ecology, University of Canberra, ACT 2617, Australia
+- last_name: O'Sullivan
+  given_name: Odhran S.
+  ORCID: 0000-0002-1448-1066
+  affiliation: Leistershire County Council, Leicester, United Kingdom
+- last_name: Oberle
+  given_name: Brad
+  ORCID: 0000-0002-4227-3352
+  affiliation: Division of Natural Sciences, New College of Florida, USA
+- last_name: Ohlsen
+  given_name: Daniel
+  ORCID: 0000-0002-8030-7349
+  affiliation: Royal Botanic Gardens Victoria
+- last_name: Onoda
+  given_name: Yusuke
+  ORCID: 0000-0001-6245-2342
+  affiliation: Graduate School of Agriculture, Kyoto University, Japan
+- last_name: Ooi
+  given_name: Mark
+  ORCID: 0000-0002-3046-0417
+  affiliation: Centre for Ecosystem Science, School of Biological, Earth, and Environmental
+    Sciences, UNSW Sydney, Australia
+- last_name: Osborne
+  given_name: Colin P.
+  ORCID: 0000-0002-7423-3718
+  affiliation: University of Sheffield, Department of Animal and Plant Sciences, United
+    Kingdom
+- last_name: Paczkowska
+  given_name: Grazyna
+  ORCID: .na.character
+  affiliation: Western Australian Herbarium, Keiran McNamara Conservation Science
+    Centre, Department of Biodiversity, Conservation and Attractions, Western Australia,
+    Australia
+- last_name: Pate
+  given_name: John
+  ORCID: .na.character
+  affiliation: School of Plant Biology, The University of Western Australia, Australia
+- last_name: Pate
+  given_name: John
+  ORCID: unkown
+  affiliation: Department of Botany, The University of Western Australia, Nedlands
+- last_name: Peeters
+  given_name: Paula
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Pekin
+  given_name: Burak
+  ORCID: 0000-0002-4797-6962
+  affiliation: Istanbul Technical University, Eurasia Institute of Earth Sciences,
+    Istanbul, Turkey
+- last_name: Pfautsch
+  given_name: Sebastian
+  ORCID: 0000-0002-4390-4195
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University
+- last_name: Pickering
+  given_name: Catherine
+  ORCID: 0000-0002-3731-5407
+  affiliation: School of Environment and Science, Griffith University, Australia
+- last_name: Pickup
+  given_name: Melinda
+  ORCID: 0000-0001-6118-0541
+  affiliation: Greening Australia, Australia
+- last_name: Pinkard
+  given_name: Elizabeth
+  ORCID: unknown
+  affiliation: CSIRO Ecosystem Sciences and Sustainable Agriculture Flagship
+- last_name: Pirralho
+  given_name: Marília
+  ORCID: 0000-0003-3748-0186
+  affiliation: Universidade Federal de Itajubá, Itajuba, Brazil
+- last_name: Pollock
+  given_name: Laura
+  ORCID: 0000-0002-6004-4027
+  affiliation: Department of Biology, McGill University, Montréal, Canada
+- last_name: Poot
+  given_name: Pieter
+  ORCID: 0000-0001-7721-0696
+  affiliation: University of Western Australia, Australia
+- last_name: Portelli
+  given_name: Antoinette
+  ORCID: 0000-0002-3876-5530
+  affiliation: University of Melbourne, Australia
+- last_name: Possingham
+  given_name: Hugh
+  ORCID: 0000-0001-7755-996X
+  affiliation: The University of Queensland, Australia
+- last_name: Powell
+  given_name: Jeff R.
+  ORCID: 0000-0003-1091-2452
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Power
+  given_name: Sally A.
+  ORCID: 0000-0002-2723-8671
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Prentice
+  given_name: Iain Colin
+  ORCID: 0000-0002-1296-6764
+  affiliation: Imperial College, London, United Kingdom
+- last_name: Price
+  given_name: Aina
+  ORCID: .na.character
+  affiliation: University of Tasmania, Australia
+- last_name: Prior
+  given_name: Lynda
+  ORCID: 0000-0002-5511-2320
+  affiliation: University of Tasmania, Australia
+- last_name: Prober
+  given_name: Suzanne
+  ORCID: 0000-0002-6518-239X
+  affiliation: CSIRO Land and Water, Australia
+- last_name: Purdie
+  given_name: Rosemary
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Radford-Smith
+  given_name: Julian
+  ORCID: 0000-0001-6949-9469
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Ranathunge
+  given_name: Kosala
+  ORCID: 0000-0003-2826-9936
+  affiliation: University of Western Australia, Australia
+- last_name: Read
+  given_name: Jennifer
+  ORCID: 0000-0002-4727-3482
+  affiliation: School of Biological Sciences, Monash University, Australia
+- last_name: Reynolds
+  given_name: Victoria
+  ORCID: 0000-0002-6071-9303
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Rice
+  given_name: Barbara
+  ORCID: .na.character
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Richards
+  given_name: Anna
+  ORCID: 0000-0002-2934-5497
+  affiliation: CSIRO Land and Water, Australia
+- last_name: Richards
+  given_name: Jeannine
+  ORCID: 0000-0002-1736-2126
+  affiliation: Nelson Institute for Environmental Studies, University of Wisconsin-Madison,
+    Madison, WI, USA
+- last_name: Richardson
+  given_name: Ben
+  ORCID: 0000-0002-6108-0572
+  affiliation: Western Australian Herbarium, Department of Biodiversity, Conservation
+    and Attractions, Western Australia, Australia
+- last_name: Roberts
+  given_name: Bryan
+  ORCID: .na.character
+  affiliation: Department of Environment, Land, Water and Planning, Victoria, Australia
+- last_name: Robinson
+  given_name: Alastair
+  ORCID: 0000-0001-8581-2718
+  affiliation: Royal Botanic Gardens Victoria
+- last_name: Roderick
+  given_name: Michael
+  ORCID: 0000-0002-3630-7739
+  affiliation: The Australian National University, Australia
+- last_name: Rosell
+  given_name: Julieta A.
+  ORCID: 0000-0001-5741-8027
+  affiliation: Laboratorio Nacional de Ciencias de la Sostenibilidad, Instituto de
+    Ecología, Universidad Nacional Autónoma de México, Ciudad de México, Mexico
+- last_name: Rossetto
+  given_name: Maurizio
+  ORCID: 0000-0002-4878-9114
+  affiliation: National Herbarium of New South Wales, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: Rumman
+  given_name: Rizwana
+  ORCID: 0000-0002-8094-5631
+  affiliation: WaterNSW
+- last_name: Russell-Smith
+  given_name: Jeremy
+  ORCID: 0000-0003-1489-2866
+  affiliation: Research Institute of Environment and Livelihoods, Charles Darwin University,
+    Casuarina, Darwin, NT, 0810, Australia
+- last_name: Rye
+  given_name: Barbara
+  ORCID: 0000-0003-1254-5940
+  affiliation: Western Australian Herbarium, Department of Biodiversity, Conservation
+    and Attractions, Western Australia, Australia
+- last_name: Rymer
+  given_name: Paul D.
+  ORCID: 0000-0003-0988-4351
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Samantha
+  given_name: Setterfield
+  ORCID: 0000-0002-7470-4997
+  affiliation: University of Western Australia
+- last_name: Sams
+  given_name: Michael
+  ORCID: 0000-0003-3311-4891
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Sanson
+  given_name: Gordon
+  ORCID: .na.character
+  affiliation: School of Biological Sciences, Monash University, Australia
+- last_name: Santini
+  given_name: Nadia S.
+  ORCID: 0000-0002-8319-8862
+  affiliation: Instituto de Ecología, Universidad Nacional Autónoma de México
+- last_name: Sauquet
+  given_name: Hervé
+  ORCID: 0000-0001-8305-3236
+  affiliation: National Herbarium of New South Wales, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: Schmidt
+  given_name: Susanne
+  ORCID: 0000-0001-8369-1238
+  affiliation: School of Agriculture and Food Science, The University of Queensland,
+    Australia
+- last_name: Schmitz
+  given_name: Nele
+  ORCID: .na.character
+  affiliation: Thünen Institut, Germany
+- last_name: Schulze
+  given_name: Ernst-Detlef
+  ORCID: 0000-0001-6188-9219
+  affiliation: Max-Planck Institute for Biogeochemistry, Germany
+- last_name: Schönenberger
+  given_name: Jürg
+  ORCID: 0000-0001-6791-2731
+  affiliation: Department of Botany and Biodiversity Research, University of Vienna,
+    Austria
+- last_name: Scott
+  given_name: Andrew John
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Searson
+  given_name: Matthew J.
+  ORCID: .na.character
+  affiliation: Centre for Horticulture and Plant Sciences, University of Western Sydney
+- last_name: Sendall
+  given_name: Kerrie
+  ORCID: 0000-0001-6175-0954
+  affiliation: Rider University, Lawrence Township, NJ, USA
+- last_name: Shedley
+  given_name: Erica Frances
+  ORCID: unknown
+  affiliation: Winnijup Wildflowers Consultancy, Bridgetown, Western Australia
+- last_name: Simpson
+  given_name: Bradley
+  ORCID: 000-0002-6356-962X
+  affiliation: Clinical & Health Sciences, University of South Australia, SA 5000,
+    Australia
+- last_name: Simpson
+  given_name: Kimberley
+  ORCID: 0000-0001-6673-227X
+  affiliation: Plants, Photosynthesis and Soil, School of Biosciences, University
+    of Sheffield, Sheffield, UK
+- last_name: Sinclair
+  given_name: Steven
+  ORCID: 0000-0002-4282-1021
+  affiliation: Department of Environment, Land, Water and Planning, Victoria, Australia
+- last_name: Singh Ramesh
+  given_name: Arun
+  ORCID: 0000-0002-9143-5514
+  affiliation: College of Science and Engineering, James Cook University, Cairns,
+    QLD, Australia
+- last_name: Sjöström
+  given_name: Anne
+  ORCID: .na.character
+  affiliation: unknown
+- last_name: Smith
+  given_name: Benjamin
+  ORCID: 0000-0002-6987-5337
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Smith
+  given_name: Renee
+  ORCID: .na.character
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Smith-Martin
+  given_name: Chris
+  ORCID: 0000-0002-6557-1432
+  affiliation: Department of Ecology, Evolution and Environmental Biology, Columbia
+    University, New York, New York, USA
+- last_name: Soliveres
+  given_name: Santiago
+  ORCID: 0000-0001-9661-7192
+  affiliation: Bern University, Switzerland
+- last_name: Soper
+  given_name: Fiona
+  ORCID: 0000-0002-9910-9377
+  affiliation: McGill University, Canada
+- last_name: Sparrow
+  given_name: Ben
+  ORCID: 0000-0003-2566-1895
+  affiliation: Terrestrial Ecosystem Research Network, The School of Biological Sciences,
+    The University of Adelaide, Adelaide, SA, 5005, Australia
+- last_name: Spooner
+  given_name: Amanda
+  ORCID: .na.character
+  affiliation: Western Australian Herbarium, Keiran McNamara Conservation Science
+    Centre, Department of Biodiversity, Conservation and Attractions, Western Australia,
+    Australia
+- last_name: Stajsic
+  given_name: Val
+  ORCID: .na.character
+  affiliation: Royal Botanic Gardens Victoria
+- last_name: Standish
+  given_name: Rachel
+  ORCID: 0000-0001-8118-1904
+  affiliation: Environmental and Conservation Sciences, Murdoch University, Australia
+- last_name: Staples
+  given_name: Timothy
+  ORCID: 0000-0002-8550-2661
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Stephens
+  given_name: Ruby
+  ORCID: 0000-0002-3767-2690
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Stephens
+  given_name: Ruby
+  ORCID: 0000-0002-3767-2690
+  affiliation: School of Natural Sciences, Macquarie University, Australia
+- last_name: Stewart
+  given_name: George
+  ORCID: .na.character
+  affiliation: The University of Queensland, Australia
+- last_name: Stuart
+  given_name: Stephanie
+  ORCID: 0000-0002-1645-8775
+  affiliation: NSW Department of Planning Industry and Environment, Australia
+- last_name: Suda
+  given_name: Jan
+  ORCID: 0000-0001-8964-9153
+  affiliation: Academy of Science Czech Republic
+- last_name: Sweedman
+  given_name: Luke
+  ORCID: .na.character
+  affiliation: Western Australian Seed Centre, Botanic Garden and Parks Authority,
+    Western Australia
+- last_name: Szota
+  given_name: Christopher
+  ORCID: 0000-0002-8837-591X
+  affiliation: University of Melbourne, Australia
+- last_name: Taseski
+  given_name: Guy
+  ORCID: 0000-0003-2243-3408
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Tasker
+  given_name: Elizabeth
+  ORCID: 0000-0002-2607-7183
+  affiliation: NSW Department of Planning Industry and Environment, Australia
+- last_name: Taylor
+  given_name: Daniel
+  ORCID: .na.character
+  affiliation: University of Technology Sydney, Australia
+- last_name: Thomas
+  given_name: Freya
+  ORCID: 0000-0001-9926-6295
+  affiliation: University of Melbourne, Australia
+- last_name: Thompson
+  given_name: Ian
+  ORCID: .na.character
+  affiliation: University of Melbourne, Australia
+- last_name: Tissue
+  given_name: David
+  ORCID: 0000-0002-8497-2047
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Tjoelker
+  given_name: Mark G.
+  ORCID: 0000-0003-4607-5238
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Tng
+  given_name: David Yue Phin Jeremiah-Seok
+  ORCID: 0000-0001-5135-0922
+  affiliation: Centre for Rainforest Studies, School for Field Studies, Yungaburra,
+    Queensland 4872, Australia
+- last_name: Toelken
+  given_name: Hellmut R.
+  ORCID: .na.character
+  affiliation: State Herbarium of South Australia, Australia
+- last_name: Togashi
+  given_name: Henrique
+  ORCID: .na.character
+  affiliation: Department of Biological Sciences, Macquarie University, Sydney
+- last_name: Tolsma
+  given_name: Arn
+  ORCID: 0000-0003-4528-2673
+  affiliation: Arthur Rylah Institute, Department of Environment, Land, Water and
+    Planning, Heidelberg, Victoria, Australia
+- last_name: Tomlinson
+  given_name: Kyle
+  ORCID: 0000-0003-3039-6766
+  affiliation: Xishuangbanna Tropical Botanic Garden, China
+- last_name: Trudgen
+  given_name: Malcolm
+  ORCID: .na.character
+  affiliation: Western Australian Herbarium, Keiran McNamara Conservation Science
+    Centre, Department of Biodiversity, Conservation and Attractions, Western Australia,
+    Australia
+- last_name: Tsakalos
+  given_name: James
+  ORCID: 0000-0001-5067-196X
+  affiliation: School of Biosciences and Veterinary Medicine, Plant Diversity and
+    Ecosystems Management Unit, University of Camerino, Camerino, MC, Italy
+- last_name: Tsujii
+  given_name: Yuki
+  ORCID: 0000-0003-3646-8142
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: Turner
+  given_name: Neil C.
+  ORCID: 0000-0002-2982-0411
+  affiliation: University of Western Australia, Australia
+- last_name: Veneklaas
+  given_name: Erik
+  ORCID: 0000-0002-7030-4056
+  affiliation: University of Western Australia, Australia
+- last_name: Venn
+  given_name: Susanna
+  ORCID: 0000-0002-7433-0120
+  affiliation: Centre for Integrative Ecology, School of Life and Environmental Sciences,
+    Deakin University, Burwood, Australia
+- last_name: Vesk
+  given_name: Peter
+  ORCID: 0000-0003-2008-7062
+  affiliation: University of Melbourne, Australia
+- last_name: Vlasveld
+  given_name: Carolyn
+  ORCID: 0000-0001-6445-7067
+  affiliation: School of Biological Sciences, Monash University, Australia
+- last_name: Vorontsova
+  given_name: Maria
+  ORCID: 0000-0003-0899-1120
+  affiliation: Royal Botanic Gardens, Kew, United Kingdom
+- last_name: Walsh
+  given_name: Neville
+  ORCID: 0000-0003-4671-1425
+  affiliation: Royal Botanic Gardens Victoria
+- last_name: Warren
+  given_name: Charles
+  ORCID: 0000-0002-0788-4713
+  affiliation: School of Life and Environmental Sciences, The University of Sydney,
+    Australia
+- last_name: Warwick
+  given_name: Nigel
+  ORCID: 0000-0001-7009-3183
+  affiliation: University of New England, Australia
+- last_name: Weerasinghe
+  given_name: Lasantha K.
+  ORCID: 0000-0002-5173-8000
+  affiliation: Faculty of Agriculture, University of Peradeniya, Peradeniya 20400,
+    Sri Lanka
+- last_name: Wells
+  given_name: Jessie
+  ORCID: 0000-0002-3555-5108
+  affiliation: School of Biological Sciences, The University of Queensland, Australia
+- last_name: Wenk
+  given_name: Elizabeth
+  ORCID: 0000-0001-5640-5910
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Westman
+  given_name: W.E
+  ORCID: .na.character
+  affiliation: The University of Queensland, Australia
+- last_name: Westoby
+  given_name: Mark
+  ORCID: 0000-0001-7690-4530
+  affiliation: Department of Biological Sciences, Macquarie University, Australia
+- last_name: White
+  given_name: Matthew
+  ORCID: 0000-0003-2120-0071
+  affiliation: Department of Environment, Land, Water and Planning, Victoria, Australia
+- last_name: Williams
+  given_name: Nicholas
+  ORCID: 0000-0001-6291-9483
+  affiliation: University of Melbourne, Australia
+- last_name: Williams
+  given_name: Paul R.
+  ORCID: unknown
+  affiliation: Vegetation Management Science, Malanda, Queensland, Australia
+- last_name: Wills
+  given_name: Jarrah
+  ORCID: 0000-0002-0235-7690
+  affiliation: School of Life and Environmental Sciences, The University of Sydney,
+    Australia
+- last_name: Wilson
+  given_name: Barbara
+  ORCID: .na.character
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: Wilson
+  given_name: J. Bastow
+  ORCID: .na.character
+  affiliation: Botany Department, University of Otago, Dunedin, New Zealand
+- last_name: Wilson
+  given_name: Peter
+  ORCID: 0000-0001-8581-318X
+  affiliation: National Herbarium of NSW and Royal Botanic Gardens and Domain Trust,
+    Australia
+- last_name: Windecker
+  given_name: Saras
+  ORCID: 0000-0002-4870-8353
+  affiliation: University of Melbourne, Australia
+- last_name: Witkowski
+  given_name: E. T. F.
+  ORCID: .na.character
+  affiliation: University of the Witwatersrand, South Africa
+- last_name: Wood
+  given_name: Sam
+  ORCID: .na.character
+  affiliation: University of Tasmania, Australia
+- last_name: Wooller
+  given_name: Susan
+  ORCID: .na.character
+  affiliation: Murdoch University, Australia
+- last_name: Wright
+  given_name: Ian
+  ORCID: 0000-0001-8338-9143
+  affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+    Australia
+- last_name: Yang
+  given_name: Sophie
+  ORCID: 0000-0001-7328-345X
+  affiliation: Evolution & Ecology Research Centre, School of Biological, Earth, and
+    Environmental Sciences, UNSW Sydney, Australia
+- last_name: Yates
+  given_name: Colin
+  ORCID: 0000-0003-2286-8700
+  affiliation: Biodiversity and Conservation Science, Department of Biodiversity,
+    Conservation and Attractions, WA, Australia
+- last_name: Yunusa
+  given_name: Isa
+  ORCID: .na.character
+  affiliation: University of Technology Sydney, Australia
+- last_name: Zanne
+  given_name: Amy
+  ORCID: 0000-0001-6379-9452
+  affiliation: Department of Biology, University of Miami, Coral Gables, Florida 33146,
+    USA
+- last_name: Zemunik
+  given_name: Graham
+  ORCID: 0000-0002-6064-345X
+  affiliation: University of Western Australia, Australia
+- last_name: Zeppel
+  given_name: Melanie
+  ORCID: 0000-0002-5510-0936
+  affiliation: Natural Capital & Carbon Analytics
+- last_name: Zieminska
+  given_name: Kasia
+  ORCID: 0000-0001-7750-4758
+  affiliation: AMAP (Botanique et Modélisation de l'Architecture des Plantes et des
+    Végétations), Université de Montpellier, CIRAD, CNRS, INRA, IRD, Montpellier,
+    France
+- last_name: Ziemińska
+  given_name: Kasia
+  ORCID: 0000-0001-7750-4758
+  affiliation: AMAP (Botanique et Modélisation de l'Architecture des Plantes et des
+    Végétations), Université de Montpellier, CIRAD, CNRS, INRA, IRD, Montpellier,
+    France
+- last_name: Zolfaghar
+  given_name: Sepideh
+  ORCID: 0000-0003-0960-9560
+  affiliation: University of Technology Sydney, Australia
+- last_name: de Campos
+  given_name: Mariana
+  ORCID: unknown
+  affiliation: School of Plant Biology, University of Western Australia
+- last_name: de Salas
+  given_name: Miguel
+  ORCID: 0000-0002-7148-639X
+  affiliation: Tasmanian Herbarium, Australia
+- last_name: de Tombeur
+  given_name: Félix
+  ORCID: 0000-0002-6012-8458
+  affiliation: TERRA Teaching and Research Centre, Gembloux Agro-Bio Tech, University
+    of Liege, Gembloux, Belgium
+- last_name: de Tombeur
+  given_name: Félix
+  ORCID: 0000-0002-6012-8458
+  affiliation: School of Biological Sciences, University of Western Australia, Perth,
+    Australia
+- last_name: van Langevelde
+  given_name: Frank
+  ORCID: 0000-0001-8870-0797
+  affiliation: Wildlife Ecology & Conservation Group, Wageningen University, The Netherlands
+- last_name: van der Merwe
+  given_name: Marlien
+  ORCID: 0000-0003-1307-5143
+  affiliation: Research Centre for Ecosystem Resilience, Australian Institute of Botanical
+    Science, Royal Botanic Gardens and Domain Trust, Sydney, Australia
+- last_name: van der Moezel
+  given_name: Paul
+  ORCID: .na.character
+  affiliation: PGV Environmental

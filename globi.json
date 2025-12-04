@@ -1,0 +1,125 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "traits.csv.gz",
+    "dcterms:bibliographicCitation" : "Falster, Gallagher et al (2021) AusTraits, a curated plant trait database for the Australian flora. Scientific Data 8: 254, https://doi.org/10.1038/s41597-021-01006-6",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "columns" : [ {
+        "name" : "referenceCitation",
+        "titles" : "dataset_id",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonName",
+        "titles" : "taxon_name",
+        "datatype" : "string"
+      }, {
+        "name" : "observation_id",
+        "titles" : "observation_id",
+        "datatype" : "string"
+      }, {
+        "name" : "interactionTypeName",
+        "titles" : "trait_name",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "value",
+        "separator": " ",
+        "datatype" : "string"
+      }, {
+        "name" : "unit",
+        "titles" : "unit",
+        "datatype" : "string"
+      }, {
+        "name" : "entity_type",
+        "titles" : "entity_type",
+        "datatype" : "string"
+      }, {
+        "name" : "value_type",
+        "titles" : "value_type",
+        "datatype" : "string"
+      }, {
+        "name" : "basis_of_value",
+        "titles" : "basis_of_value",
+        "datatype" : "string"
+      }, {
+        "name" : "replicates",
+        "titles" : "replicates",
+        "datatype" : "string"
+      }, {
+        "name" : "basisOfRecordName",
+        "titles" : "basis_of_record",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceLifestageName",
+        "titles" : "life_stage",
+        "datatype" : "string"
+      }, {
+        "name" : "population_id",
+        "titles" : "population_id",
+        "datatype" : "string"
+      }, {
+        "name" : "individual_id",
+        "titles" : "individual_id",
+        "datatype" : "string"
+      }, {
+        "name" : "repeat_measurements_id",
+        "titles" : "repeat_measurements_id",
+        "datatype" : "string"
+      }, {
+        "name" : "temporal_context_id",
+        "titles" : "temporal_context_id",
+        "datatype" : "string"
+      }, {
+        "name" : "source_id",
+        "titles" : "source_id",
+        "datatype" : "string"
+      }, {
+        "name" : "localityId",
+        "titles" : "location_id",
+        "datatype" : "string"
+      }, {
+        "name" : "entity_context_id",
+        "titles" : "entity_context_id",
+        "datatype" : "string"
+      }, {
+        "name" : "plot_context_id",
+        "titles" : "plot_context_id",
+        "datatype" : "string"
+      }, {
+        "name" : "treatment_context_id",
+        "titles" : "treatment_context_id",
+        "datatype" : "string"
+      }, {
+        "name" : "http://rs.tdwg.org/dwc/terms/eventDate",
+        "titles" : "collection_date",
+        "datatype" : "string"
+      }, {
+        "name" : "measurement_remarks",
+        "titles" : "measurement_remarks",
+        "datatype" : "string"
+      }, {
+        "name" : "method_id",
+        "titles" : "method_id",
+        "datatype" : "string"
+      }, {
+        "name" : "method_context_id",
+        "titles" : "method_context_id",
+        "datatype" : "string"
+      }, {
+        "name" : "original_name",
+        "titles" : "original_name",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}
