@@ -25,25 +25,15 @@ and gzipping traits.csv to reduce the filesize, and symlinking sources.bib to he
 
 ## Files
 
-All files originate from AusTrait except for those annotated explicitly below.
+All files originate in austraits-7.0.0/ are from AusTrait. The following files and links have been added to help aid indexing of dispersal claims in AusTraits. 
 
-├── biblio.bib -> sources.bib (added to facilitate GloBI indexing/review)
-├── build_info.md
-├── contexts.csv
-├── contributors.csv
-├── definitions.yml
-├── excluded_data.csv
-├── globi.json (added to facilitate GloBI indexing/review)
+```
+├── biblio.bib -> austraits-7.0.0/sources.bib (added to facilitate GloBI indexing/review)
 ├── interaction_types_mapping.csv (added to facilitate GloBI indexing/review)
-├── locations.csv
-├── metadata.yml
-├── methods.csv
+├── globi.json (added to facilitate GloBI indexing/review)
 ├── README.md (added to facilitate GloBI indexing/review)
-├── schema.yml
-├── sources.bib
-├── taxa.csv
-├── taxonomic_updates.csv
-└── traits.csv.gz (gzipped to reduce file size)
+└── traits.csv.gz -> austraits-7.0.0/traits.csv.gz (gzipped to reduce file size)
+```
 
 ## Provenance 
 
