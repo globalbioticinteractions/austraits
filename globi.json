@@ -14,8 +14,15 @@
     "headerRowCount" : 1,
     "null" : [ "" ],
     "tableSchema" : {
+       "foreignKeys": [{
+         "columnReference": "referenceId",
+         "reference": {
+           "resource": "sources.tsv",
+           "columnReference": "referenceId"
+         }
+      }],
       "columns" : [ {
-        "name" : "referenceCitation",
+        "name" : "referenceId",
         "titles" : "dataset_id",
         "datatype" : "string"
       }, {
@@ -118,6 +125,28 @@
       }, {
         "name" : "original_name",
         "titles" : "original_name",
+        "datatype" : "string"
+      } ]
+    }
+  }, {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "sources.tsv",
+    "dcterms:bibliographicCitation" : "Falster, Gallagher et al (2021) AusTraits, a curated plant trait database for the Australian flora. Scientific Data 8: 254, https://doi.org/10.1038/s41597-021-01006-6",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "referenceId",
+      "columns" : [ {
+        "name" : "referenceId",
+        "titles" : "dataset_id",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "dataset_citation",
         "datatype" : "string"
       } ]
     }
